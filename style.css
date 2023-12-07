@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url(fonts/Roboto/Roboto-Regular.ttf
+    );
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+:root {
+  --main-color: #fefe05;
+  --header-logo: "Oswald", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-image: url(img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #010529c9;
+}
+.wrapper {
+  width: calc(100%-90px);
+  height: 100%;
+  max-width: 1440px;
+  display: flex;
+}
+header {
+  height: 50px;
+  width: 100%;
+  background-color: var(--header-logo);
+  border: 0cap solid #000;
+}
+.header-block {
+  width: 30.4rem;
+  height: 100vh;
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b0b0d86;
+}
+.header-logo {
+  margin-top: -30rem;
+}
+.logo-link {
+  text-decoration: none;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+}
+.logo-link span {
+  color: white;
+}
+nav {
+  margin-top: 4.7rem;
+}
+.nav-list {
+  list-style: none;
+  font-size: 0px;
+  margin: 0;
+  padding: 0;
+}
+.nav-item .nav-item_link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  padding: 12px 5px;
+  display: block;
+  font-size: 1.7rem;
+  transition: all 0.3s ease-in;
+}
+.nav-item .nav-item_link:hover {
+  color: var(--main-color);
+}
+.header-support {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 46rem;
+}
+.support,
+.contact {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  padding: 12px 5px;
+  display: block;
+  font-size: 1.7rem;
+  transition: all 0.3s ease-in;
+}
+:hover {
+  color: var(--main-color);
+}
+.owner {
+  position: absolute;
+  margin-top: 650px;
+  font-family: "Oswald";
+  color: gray;
+}
+.main-content {
+  margin-left: 50rem;
+  margin-top: 20 rem;
+}
+.main-content__title {
+  margin-top: 6rem;
+  font-size: 2.9rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main-content__title span {
+  font-size: 3.9rem;
+  color: var(--main-color);
+}
+.main-content__descript {
+  font-family: "Monterrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 5px;
+  color: white;
+  line-height: 20px;
+  margin-bottom: 5rem;
+}
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  width: 143px;
+  height: 41px;
+  border: 2px solid var(--main-color);
+  border-radius: 8px;
+}
+.btn:hover {
+  background-color: #45a049;
+  /* Темно-зеленый цвет при наведении */
+}
+.block-img {
+  margin-top: 10rem;
+  display: flex;
+}
+.image {
+  width: 20rem;
+  max-width: 100%;
+  margin-right: 20px;
+  border-radius: 17px;
+  viewport-fit: cover;
+  border: 3px solid var(--main-color);
+}
+.social-icons-container {
+  width: 200px;
+  height: 60px;
+  background-color: #F2C94C;
+  border-radius: 10px;
+  /* Радиус закругления углов */
+  margin-left: 1200px;
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social-icon-link {
+  text-decoration: none;
+  /* Убираем подчеркивание для ссылок */
+}
+.social-icon {
+  width: 20px;
+  /* Размер иконки */
+  height: 20px;
+  border-radius: 50%;
+  /* Радиус закругления иконки (для круглых иконок) */
+}
+.footer {
+  display: flex;
+}
+.news {
+  width: auto;
+  height: auto;
+  position: absolute;
+  display: flex;
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 630px;
+  margin-left: 504px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+.img {
+  position: absolute;
+  width: 16px;
+  /* Установим ширину изображения */
+  height: 13px;
+  /* Высота будет автоматически рассчитана, чтобы сохранить пропорции */
+  margin-top: 635px;
+  /* Добавим отступ сверху */
+  margin-left: 564px;
+  /* Добавим отступ слева */
+}
+.WTF {
+  display: inline-block;
+  position: absolute;
+  font-size: 1rem;
+  color: white;
+  margin-top: 660px;
+  margin-left: 504px;
+  font-family: "Roboto";
+  width: max-content;
+}
